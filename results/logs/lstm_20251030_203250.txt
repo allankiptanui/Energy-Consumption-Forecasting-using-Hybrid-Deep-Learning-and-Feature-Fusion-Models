@@ -1,0 +1,16 @@
+2025-10-30 20:32:50 — INFO — run_lstm — Starting run_training_workflow
+2025-10-30 20:32:50 — INFO — run_lstm — Model: lstm  use_ucimlrepo=True
+2025-10-30 20:32:50 — INFO — run_lstm — Loaded config/config.yaml
+2025-10-30 20:32:50 — INFO — run_lstm — Loading raw dataset (this may take time)...
+2025-10-30 20:34:51 — INFO — run_lstm — Raw dataset loaded. Shape: (2075259, 9)
+2025-10-30 20:34:51 — INFO — run_lstm — Running preprocessing pipeline...
+2025-10-30 20:35:35 — INFO — run_lstm — Preprocessing complete. Train shape: (27536, 24)   Test shape: (6885, 24)
+2025-10-30 20:35:35 — INFO — run_lstm — Seq features (23): ['global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3', 'hour', 'dayofweek', 'month']
+2025-10-30 20:35:35 — INFO — run_lstm — Static features (5): ['month', 'is_weekend', 'month_sin', 'month_cos', 'is_holiday']
+2025-10-30 20:35:36 — INFO — run_lstm — Datasets ready. sizes -> train=27368 val=2585 test=6717
+2025-10-30 20:35:36 — INFO — run_lstm — Built model on device=cpu
+2025-10-30 20:35:36 — INFO — run_lstm — Starting neural training...
+2025-10-30 21:27:09 — INFO — run_lstm — Training finished. Checkpoint saved at C:\Users\USER\OneDrive\Desktop\energy-forecasting-hybrid\results\checkpoints\lstm_best.pth
+2025-10-30 21:27:37 — INFO — run_lstm — Saved metrics to results\metrics_lstm.json
+2025-10-30 21:27:40 — INFO — run_lstm — Saved forecast plot to results\figures\forecast_lstm.png
+2025-10-30 21:27:40 — INFO — run_lstm — Finished evaluation. Metrics: {'model': 'lstm', 'MAE': 0.257158100605011, 'RMSE': 0.3615557803994295, 'MAPE': 226.4742431640625, 'n_test': 6717}

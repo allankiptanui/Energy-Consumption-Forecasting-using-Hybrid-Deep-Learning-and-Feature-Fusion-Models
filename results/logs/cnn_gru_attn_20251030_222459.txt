@@ -1,0 +1,4 @@
+2025-10-30 22:24:59 — INFO — run_cnn_gru_attn — Starting run_training_workflow
+2025-10-30 22:24:59 — INFO — run_cnn_gru_attn — Model: cnn_gru_attn  use_ucimlrepo=True
+2025-10-30 22:24:59 — INFO — run_cnn_gru_attn — Loaded config/config.yaml
+2025-10-30 22:24:59 — INFO — run_cnn_gru_attn — Loading raw dataset (this may take time)...

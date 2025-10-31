@@ -1,0 +1,20 @@
+2025-10-30 18:58:41 — INFO — run_cnn_gru_attn — Starting run_training_workflow
+2025-10-30 18:58:41 — INFO — run_cnn_gru_attn — Model: cnn_gru_attn  use_ucimlrepo=True
+2025-10-30 18:58:41 — INFO — run_cnn_gru_attn — Loaded config/config.yaml
+2025-10-30 18:58:41 — INFO — run_cnn_gru_attn — Loading raw dataset (this may take time)...
+2025-10-30 19:00:32 — INFO — run_cnn_gru_attn — Raw dataset loaded. Shape: (2075259, 9)
+2025-10-30 19:00:32 — INFO — run_cnn_gru_attn — Running preprocessing pipeline...
+2025-10-30 19:01:08 — INFO — run_cnn_gru_attn — Preprocessing complete. Train shape: (27536, 24)   Test shape: (6885, 24)
+2025-10-30 19:01:08 — INFO — run_cnn_gru_attn — Seq features (23): ['global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3', 'hour', 'dayofweek', 'month']
+2025-10-30 19:01:08 — INFO — run_cnn_gru_attn — Static features (5): ['month', 'is_weekend', 'month_sin', 'month_cos', 'is_holiday']
+2025-10-30 19:01:11 — INFO — run_cnn_gru_attn — Datasets ready. sizes -> train=27368 val=2585 test=6717
+2025-10-30 19:01:13 — INFO — run_cnn_gru_attn — Built model on device=cpu
+2025-10-30 19:01:13 — INFO — run_cnn_gru_attn — Starting neural training...
+2025-10-30 19:24:23 — INFO — run_cnn_gru_attn — Training finished. Checkpoint saved at C:\Users\USER\OneDrive\Desktop\energy-forecasting-hybrid\results\checkpoints\cnn_gru_attn_best.pth
+2025-10-30 19:24:35 — INFO — run_cnn_gru_attn — Saved metrics to results\metrics_cnn_gru_attn.json
+2025-10-30 19:24:35 — ERROR — run_cnn_gru_attn — Run failed with exception: plot_forecast() got an unexpected keyword argument 'show'
+2025-10-30 19:24:35 — ERROR — run_cnn_gru_attn — Traceback (most recent call last):
+  File "c:\Users\USER\OneDrive\Desktop\energy-forecasting-hybrid\experiments\run_training_workflow.py", line 185, in main
+    plot_forecast(y_true, y_pred, n_plot=500, title=f"{args.model} forecast vs actual", save_path=str(fig_dir / f"forecast_{args.model}.png"), show=False)
+TypeError: plot_forecast() got an unexpected keyword argument 'show'
+

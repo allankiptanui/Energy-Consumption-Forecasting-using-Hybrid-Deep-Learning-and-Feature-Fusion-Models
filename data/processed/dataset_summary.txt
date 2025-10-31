@@ -1,0 +1,41 @@
+Dataset Summary
+==================================================
+Shape: (2075259, 9)
+
+Columns:
+['date', 'time', 'global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3']
+
+Data Types:
+date                      object
+time                      object
+global_active_power       object
+global_reactive_power     object
+voltage                   object
+global_intensity          object
+sub_metering_1            object
+sub_metering_2            object
+sub_metering_3           float64
+dtype: object
+
+Missing Values:
+date                         0
+time                         0
+global_active_power          0
+global_reactive_power        0
+voltage                      0
+global_intensity             0
+sub_metering_1               0
+sub_metering_2               0
+sub_metering_3           25979
+dtype: int64
+
+Numeric Summary:
+       sub_metering_3
+count    2.049280e+06
+mean     6.458447e+00
+std      8.437154e+00
+min      0.000000e+00
+25%      0.000000e+00
+50%      1.000000e+00
+75%      1.700000e+01
+max      3.100000e+01

@@ -1,0 +1,12 @@
+2025-10-30 18:59:44 — INFO — run_gru — Starting run_training_workflow
+2025-10-30 18:59:44 — INFO — run_gru — Model: gru  use_ucimlrepo=True
+2025-10-30 18:59:44 — INFO — run_gru — Loaded config/config.yaml
+2025-10-30 18:59:44 — INFO — run_gru — Loading raw dataset (this may take time)...
+2025-10-30 19:01:54 — INFO — run_gru — Raw dataset loaded. Shape: (2075259, 9)
+2025-10-30 19:01:54 — INFO — run_gru — Running preprocessing pipeline...
+2025-10-30 19:02:49 — INFO — run_gru — Preprocessing complete. Train shape: (27536, 24)   Test shape: (6885, 24)
+2025-10-30 19:02:49 — INFO — run_gru — Seq features (23): ['global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3', 'hour', 'dayofweek', 'month']
+2025-10-30 19:02:49 — INFO — run_gru — Static features (5): ['month', 'is_weekend', 'month_sin', 'month_cos', 'is_holiday']
+2025-10-30 19:02:51 — INFO — run_gru — Datasets ready. sizes -> train=27368 val=2585 test=6717
+2025-10-30 19:02:51 — INFO — run_gru — Built model on device=cpu
+2025-10-30 19:02:51 — INFO — run_gru — Starting neural training...

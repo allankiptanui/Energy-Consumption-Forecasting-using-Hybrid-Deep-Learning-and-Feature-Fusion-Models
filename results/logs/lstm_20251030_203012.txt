@@ -1,0 +1,4 @@
+2025-10-30 20:30:12 — INFO — run_lstm — Starting run_training_workflow
+2025-10-30 20:30:12 — INFO — run_lstm — Model: lstm  use_ucimlrepo=True
+2025-10-30 20:30:12 — INFO — run_lstm — Loaded config/config.yaml
+2025-10-30 20:30:12 — INFO — run_lstm — Loading raw dataset (this may take time)...

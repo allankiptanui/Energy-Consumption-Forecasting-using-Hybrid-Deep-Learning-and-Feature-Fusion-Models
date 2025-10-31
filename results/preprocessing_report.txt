@@ -1,0 +1,39 @@
+Preprocessing report
+====================
+Generated: 2025-10-31T18:56:35.693667
+
+Raw input shape: (2075259, 9)
+After resample shape: (34589, 24)
+
+Columns:
+global_active_power, global_reactive_power, voltage, global_intensity, sub_metering_1, sub_metering_2, sub_metering_3, energy_consumption, hour, dayofweek, month, is_weekend, hour_sin, hour_cos, dow_sin, dow_cos, month_sin, month_cos, is_holiday, energy_consumption_lag_24, energy_consumption_lag_48, energy_consumption_lag_168, energy_consumption_roll_mean_24, energy_consumption_roll_std_24
+
+Missing values (after cleaning):
+global_active_power                  0
+global_reactive_power                0
+voltage                              0
+global_intensity                     0
+sub_metering_1                       0
+sub_metering_2                       0
+sub_metering_3                       0
+energy_consumption                   0
+hour                                 0
+dayofweek                            0
+month                                0
+is_weekend                           0
+hour_sin                             0
+hour_cos                             0
+dow_sin                              0
+dow_cos                              0
+month_sin                            0
+month_cos                            0
+is_holiday                           0
+energy_consumption_lag_24           24
+energy_consumption_lag_48           48
+energy_consumption_lag_168         168
+energy_consumption_roll_mean_24      1
+energy_consumption_roll_std_24       2
+dtype: int64
+
+Train shape: (27536, 24)
+Test shape: (6885, 24)

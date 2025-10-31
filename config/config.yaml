@@ -1,0 +1,36 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  energy_csv: "household_power_consumption.txt"
+
+preprocessing:
+  window_size: 168         # 1 week of hourly data
+  horizon: 1               # predict 1 step ahead
+  test_size: 0.2
+  scale_features: true
+  dropna: true
+
+training:
+  batch_size: 32
+  epochs: 5
+  lr: 0.001
+  early_stop_patience: 3
+
+models:
+  cnn_gru_attn:
+    hidden: 128
+    dropout: 0.2
+  lstm:
+    hidden: 128
+    num_layers: 1
+    dropout: 0.1
+  gru:
+    hidden: 128
+    num_layers: 1
+    dropout: 0.1
+  arima:
+    order: [5, 1, 0]
+
+results:
+  ckpt_dir: "results/checkpoints"
+  out_dir: "results"

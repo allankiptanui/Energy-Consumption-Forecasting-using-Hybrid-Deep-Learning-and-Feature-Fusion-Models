@@ -1,0 +1,17 @@
+2025-10-30 22:17:56 — INFO — run_hybrid — Starting run_training_workflow
+2025-10-30 22:17:56 — INFO — run_hybrid — Model: hybrid  use_ucimlrepo=True
+2025-10-30 22:17:56 — INFO — run_hybrid — Loaded config/config.yaml
+2025-10-30 22:17:56 — INFO — run_hybrid — Loading raw dataset (this may take time)...
+2025-10-30 22:29:09 — INFO — run_hybrid — Raw dataset loaded. Shape: (2075259, 9)
+2025-10-30 22:29:09 — INFO — run_hybrid — Running preprocessing pipeline...
+2025-10-30 22:29:56 — INFO — run_hybrid — Preprocessing complete. Train shape: (27536, 24)   Test shape: (6885, 24)
+2025-10-30 22:29:56 — INFO — run_hybrid — Seq features (23): ['global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3', 'hour', 'dayofweek', 'month']
+2025-10-30 22:29:56 — INFO — run_hybrid — Static features (5): ['month', 'is_weekend', 'month_sin', 'month_cos', 'is_holiday']
+2025-10-30 22:29:57 — INFO — run_hybrid — Datasets ready. sizes -> train=27368 val=2585 test=6717
+2025-10-30 22:29:57 — INFO — run_hybrid — Built model on device=cpu
+2025-10-30 22:29:57 — INFO — run_hybrid — Starting neural training...
+2025-10-30 22:53:00 — INFO — run_hybrid — Training finished. Checkpoint saved at C:\Users\USER\OneDrive\Desktop\energy-forecasting-hybrid\results\checkpoints\hybrid_best.pth
+2025-10-30 22:53:15 — INFO — run_hybrid — Saved metrics to results\metrics_hybrid.json
+2025-10-30 22:53:18 — INFO — run_hybrid — Saved forecast plot to results\figures\forecast_hybrid.png
+2025-10-30 22:53:19 — INFO — run_hybrid — Saved attention plot to results\figures\attention_hybrid.png
+2025-10-30 22:53:19 — INFO — run_hybrid — Finished evaluation. Metrics: {'model': 'hybrid', 'MAE': 0.2561885416507721, 'RMSE': 0.367319448584818, 'MAPE': 249.0762176513672, 'n_test': 6717}

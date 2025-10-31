@@ -1,0 +1,34 @@
+# ======================================
+# Python cache & bytecode
+# ======================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ======================================
+# Virtual environments
+# ======================================
+venv/
+.env/
+.venv/
+env/
+ENV/
+venv.bak/
+*.egg-info/
+
+# ======================================
+# IDE / Editor files
+# ======================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======================================
+# Jupyter Notebook checkpoints
+# ======================================
+.ipynb_checkpoints/
+*.ipynb_save
+

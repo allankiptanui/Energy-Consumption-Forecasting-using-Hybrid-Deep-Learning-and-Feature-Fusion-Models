@@ -1,0 +1,14 @@
+2025-10-30 19:49:46 — INFO — run_arima — Starting run_training_workflow
+2025-10-30 19:49:46 — INFO — run_arima — Model: arima  use_ucimlrepo=True
+2025-10-30 19:49:46 — INFO — run_arima — Loaded config/config.yaml
+2025-10-30 19:49:46 — INFO — run_arima — Loading raw dataset (this may take time)...
+2025-10-30 20:43:32 — INFO — run_arima — Raw dataset loaded. Shape: (2075259, 9)
+2025-10-30 20:43:32 — INFO — run_arima — Running preprocessing pipeline...
+2025-10-30 20:47:34 — INFO — run_arima — Preprocessing complete. Train shape: (27536, 24)   Test shape: (6885, 24)
+2025-10-30 20:47:34 — INFO — run_arima — Seq features (23): ['global_active_power', 'global_reactive_power', 'voltage', 'global_intensity', 'sub_metering_1', 'sub_metering_2', 'sub_metering_3', 'hour', 'dayofweek', 'month']
+2025-10-30 20:47:34 — INFO — run_arima — Static features (5): ['month', 'is_weekend', 'month_sin', 'month_cos', 'is_holiday']
+2025-10-30 20:47:37 — INFO — run_arima — Datasets ready. sizes -> train=27368 val=2585 test=6717
+2025-10-30 20:47:37 — INFO — run_arima — Built model on device=cpu
+2025-10-30 20:47:37 — INFO — run_arima — Fitting ARIMA baseline on training series...
+2025-10-30 20:48:01 — INFO — run_arima — ARIMA metrics: {'MAE': 0.4511085702097004, 'RMSE': 0.5789892859873443, 'MAPE': 102.66780919662783}
+2025-10-30 20:48:01 — INFO — run_arima — Saved ARIMA metrics to results
